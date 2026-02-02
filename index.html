@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ιωάννης Πάτσικας</title>
+    <!-- Link to the CSS file (Lab 1 will focus on styling) -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section (Lab 1) -->
+    <header>
+        <!-- Placeholder image for the profile picture -->
+        <img src="profile.jpg" alt="Avatar" width="150">
+        <h1>Ιωάννης Πάτσικας</h1>
+        <p>Φοιτητής Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών</p>
+        
+    </header>
+
+    <!-- About Me Section (Lab 1) -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Καλώς ήρθατε στην προσωπική μου ιστοσελίδα!. Ονομάζομαι <strong>Ιωάννης Πάτσικας</strong> και είμαι φοιτητής <strong>Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών</strong> στο Πανεπιστήμιο Δυτικής Μακεδονίας της Κοζάνης.</p>
+        <p>Η καταγωγή μου είναι από τα <del>Γρεβενά</del> και πέρα από την σχολή μου, ασχολούμαι με τα <em>videogames</em> και την <ins>μουσική</ins> και τα <strong>αυτοκίνητα</strong></p>
+        <h3>Το αγαπημένο μου Video</h3>
+        <iframe width="100%" height="315" 
+            src="https://www.youtube.com/watch?v=hHVt9Ls4rz0&list=LL&index=512" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <!-- Resume Section (Lab 1) -->
+    <section id="resume">
+        <h2>Resume</h2>
+
+        <h3>Education</h3>
+        <ul>
+            <li>Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Δημοκρίτειο Πανεπιστήμιο Θράκης (2022 - 2024)</li>
+            <li>Τμήμα Ηλεκτρολόγων Μηχανικών και Μηχανικών Υπολογιστών, Πανεπιστήμιο Δυτικής Μακεδονίας (2025 - Present)</li>
+        </ul>
+
+        <h3>Skills</h3>
+        <ul>
+            <li>Προγραμματισμός: Python, Java, C</li>
+        </ul>
+
+        <h3>Experience</h3>
+        <ul>
+            <li>Καμία :/</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section (Lab 1) -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <h3>Website</h3>
+        <p>Η ιστοσελίδα μου στο github</p>
+        <a href="https://github.com/anforgiven" target="_blank">View on GitHub</a>
+    </section>
+
+    <!-- Contact Me Section (Lab 3) -->
+    <section id="contact">
+        <h3 class="h3 form-title">Φόρμα Επικοινωνίας</h3>
+    
+        <!-- Thank you message -->
+        <div id="thankYouMessage" style="display: none;">
+            <p>Σας ευχαριστώ για το μήνυμά σας! Θα επικοινωνήσω μαζί σας σύντομα.</p>
+        </div>
+    
+        <!-- Form setup for Netlify -->
+        <form name="contactForm" method="POST" netlify netlify-honeypot="bot-field" id="contactForm" data-netlify="true">
+            <input type="hidden" name="form-name" value="contactForm">
+    
+            <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Ονοματεπώνυμο" required>
+                <input type="email" name="email" class="form-input" placeholder="Email" required>
+            </div>
+    
+            <textarea name="message" class="form-input" placeholder="Το μήνυμά σας" required></textarea>
+    
+            <!-- Add the form-btn class here -->
+            <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Αποστολή</span>
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer Section (Lab 1) -->
+    <footer>
+        <p>&copy; 2026 Ιωάννης Πάτσικας</p>
+        <a href="https://www.instagram.com/patsikasgiannis/" target="_blank">Instagram</a> |
+        <a href="https://github.com/anforgiven" target="_blank">GitHub</a>
+    </footer>
+
+    <!-- Σύνδεση με το αρχείο JavaScript -->
+    <script src="formValidation.js"></script>
+</body>
+</html>
